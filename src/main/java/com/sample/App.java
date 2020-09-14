@@ -23,8 +23,6 @@ public class App
     {
         DefaultHttpClient httpClient = new DefaultHttpClient();
 
-        StringWriter writer = new StringWriter();
-
         try {
             HttpPut putRequest = new HttpPut("https://maven.pkg.github.com/catto-ent1/test/com/github/egg/1.2.3/maven-assembly-example-0.1.zip");
             putRequest.addHeader("content-type", "application/octet-stream");
