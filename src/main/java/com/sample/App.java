@@ -8,10 +8,6 @@ import org.apache.http.entity.*;
 
 import java.io.*;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
@@ -43,7 +39,6 @@ public class App
         } catch(Exception e) {
             System.out.println("Error: " + e.getMessage());
         } finally {
-            //Important: Close the connect
             httpClient.getConnectionManager().shutdown();
         }
     }
